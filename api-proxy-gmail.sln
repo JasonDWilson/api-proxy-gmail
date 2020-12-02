@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-proxy-gmail", "api-proxy-gmail.csproj", "{AD4C4BE9-81DA-4289-964A-9059C113693D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD4C4BE9-81DA-4289-964A-9059C113693D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4C4BE9-81DA-4289-964A-9059C113693D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4C4BE9-81DA-4289-964A-9059C113693D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4C4BE9-81DA-4289-964A-9059C113693D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05A36826-9147-4EF1-A0FF-1925AF300D37}
+	EndGlobalSection
+EndGlobal

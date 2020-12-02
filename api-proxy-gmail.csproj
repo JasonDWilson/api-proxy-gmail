@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Jwpro.Api.Proxy.Gmail</RootNamespace>
+    <PackageId>api-proxy-gmail</PackageId>
+    <Authors>Jason D Wilson</Authors>
+    <Company>jwpro</Company>
+    <Product>api-proxy-gmail</Product>
+    <Description>.Net Wrapper for the Gmail API</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>.Net Core Gmail API Wrapper</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>2020</Copyright>
+    <PackageProjectUrl>https://github.com/JasonDWilson/api-proxy-gmail</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JasonDWilson/api-proxy-gmail</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.46.0.1992" />
+    <PackageReference Include="MimeKit" Version="2.8.0" />
+  </ItemGroup>
+
+</Project>
