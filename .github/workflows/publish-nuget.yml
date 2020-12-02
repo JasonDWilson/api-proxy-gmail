@@ -1,0 +1,23 @@
+name: Publish to Nuget
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+    - name: Nuget Push
+      run: cd bin\Release && dotnet nuget push *.nupkg --api-key ${{ secrets.JWPRO_NUGET_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
